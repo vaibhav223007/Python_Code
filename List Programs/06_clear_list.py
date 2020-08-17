@@ -24,3 +24,4 @@ lst1 = [1, 2, 3, 4, "vaibhav"]
 print(f"List is {lst1}")
 del lst1[:]
 print(f"List after using del => {lst1}")
+
