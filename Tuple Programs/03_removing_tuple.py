@@ -7,19 +7,17 @@
 # Method-1:
 
 
-def removing_tuple1(lst, length):
+def removing_tuple(input_list, length):
     index = 0
-    list_length = len(lst)
-    while index <= list_length:
-        if len(lst[index]) == length:
-            del lst[index]
-
+    l = len(input_list)
+    while index < l:
+        if len(input_list[index]) == length:
+            del input_list[index]
+            l -= 1
         index += 1
-    return lst
+    return input_list
 
 
-result = removing_tuple1(
-    [(4, 5), (4,), (8, 6, 7), (1,), (3, 4, 6, 7), (9, 9), (1, 2, 3)], 2
-)
-print(f"Result of Method-1 => {result}")
+result = removing_tuple([(4, 5), (4,), (8, 6, 7), (1,), (3, 4, 6, 7), (9, 8)], 2)
+print(f"Method-1 result => {result}")
 
