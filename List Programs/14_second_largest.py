@@ -37,6 +37,9 @@ for i in range(2, n):
         mx = list1[i]
     elif list1[i] > secondmax and mx != list1[i]:
         secondmax = list1[i]
+    else:
+        if mx == secondmax:
+            secondmax = list1[i]
 
 print("Second highest number is : ", str(secondmax))
 
