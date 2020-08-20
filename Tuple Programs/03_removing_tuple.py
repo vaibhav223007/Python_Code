@@ -43,3 +43,4 @@ list3 = [(4, 5), (4,), (8, 6, 7), (1,), (3, 4, 6, 7), (9, 9)]
 K = 2
 new_list = list(filter(lambda x: len(x) != K, list3))
 print(f"Method-3 result => {new_list}")
+

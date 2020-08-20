@@ -37,7 +37,7 @@ for i in range(2, n):
         mx = list1[i]
     elif list1[i] > secondmax and mx != list1[i]:
         secondmax = list1[i]
-    else:
+    else: # this is for the case like [99,99,0,22,11] here max and second_max will be same 
         if mx == secondmax:
             secondmax = list1[i]
 
