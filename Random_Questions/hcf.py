@@ -8,5 +8,5 @@ def hcf(number1, number2):
     return new_number
 
 
-print(hcf(13, 26))
+print(hcf(98, 78))
 
